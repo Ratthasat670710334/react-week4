@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Movies from './pages/Movies';
 import MovieDetail  from './pages/MovieDetail';
 import About from './pages/About';
+import NotFound from './pages/NotFound';
 
 const movies = [
   { id: 1, title: 'Interstellar', genre: 'Sci-Fi', year: 2014 },
