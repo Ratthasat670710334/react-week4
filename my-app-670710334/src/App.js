@@ -27,6 +27,7 @@ function App() {
           <Route path="/movies" element={<Movies />} />
           <Route path="/movies/:id" element={<MovieDetail />} />
           <Route path="/about" element={<About />} />
+           <Route path="*" element={<NotFound />} />   {/* ← ดักทุกอย่างที่เหลือ ไว้ล่างสุด */}
         </Routes>
       </main>
       <Footer />                {/* ← เห็นทุกหน้า */}
