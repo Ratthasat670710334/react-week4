@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { movies } from '../data';
+import MovieCard from '../MovieCard';
 
 function Movies() {
   return (
@@ -12,6 +13,7 @@ function Movies() {
                            transition hover:-translate-y-1 hover:shadow-xl">
             <h3 className="text-lg font-bold text-slate-800">{m.title}</h3>
             <p className="mt-1 text-sm text-slate-500">ปี {m.year} · {m.genre}</p>
+            <MovieCard /> 
           </Link>
         ))}
       </div>
