@@ -8,6 +8,7 @@ import Movies from './pages/Movies';
 import MovieDetail  from './pages/MovieDetail';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
+import Watchlist from './pages/Watchlist';
 
 
 function App() {
@@ -21,7 +22,10 @@ function App() {
           <Route path="/movies" element={<Movies />} />
           <Route path="/movies/:id" element={<MovieDetail />} />
           <Route path="/about" element={<About />} />
-           <Route path="*" element={<NotFound />} />   {/* ← ดักทุกอย่างที่เหลือ ไว้ล่างสุด */}
+          <Route path="/watchlist" element={<Watchlist />} />
+
+          
+          <Route path="*" element={<NotFound />} />   {/* ← ดักทุกอย่างที่เหลือ ไว้ล่างสุด */}
         </Routes>
       </main>
       <Footer />                {/* ← เห็นทุกหน้า */}
