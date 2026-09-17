@@ -1,5 +1,6 @@
 import { useParams} from 'react-router-dom';
 import { movies } from '../data/data';
+import ReviewForm from '../component/ReviewForm';
 
 function MovieDetail() {
   const { id } = useParams();                       // อ่านค่าจาก URL (ได้เป็น string!)
@@ -21,9 +22,8 @@ function MovieDetail() {
           {movie.titleTh && <p className="text-lg text-slate-600">{movie.titleTh}</p>}
           <p className="mt-1 text-slate-500">ปี {movie.year} | {movie.genre} | ⭐ {movie.rating}</p>
           <p className="mt-4 leading-relaxed text-slate-700">{movie.detail}</p>
+          <ReviewForm movieTitle={movie.title}/>
         </div>
-
-
       </div>
     </>
 
